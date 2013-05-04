@@ -19,7 +19,7 @@ import java.io.FileOutputStream;
 			prop.setProperty("bed", "bed");
 			prop.setProperty("chair", "chair");
 			prop.setProperty("bucket", "bucket");
-			prop.store(new FileOutputStream("randomstrings.properties"),null);
+			prop.store(new FileOutputStream("for_use_poc-martus_random-string.properties"),null);
 		}catch(IOException ex){
 			ex.printStackTrace();
 		}
