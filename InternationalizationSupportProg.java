@@ -1,5 +1,6 @@
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
@@ -14,19 +15,20 @@ public class InternationalizationSupportProg {
 	JTextArea ta;
 	public InternationalizationSupportProg(){
 		JFrame jf = new JFrame("multiple languages");
-		jf.setSize(200,600);
+		jf.setSize(200,400);
 		ta = new JTextArea();
 		ta.setEditable(false);
-		ta.setPreferredSize(new Dimension(200,500));
-		jf.setLayout(new GridLayout(2,1));
+		ta.setPreferredSize(new Dimension(200,300));
+		jf.setLayout(new BorderLayout());
 		JButton b1= new JButton("English");
 		JButton b2 = new JButton("Hindi");
 		JPanel p = new JPanel();
 		p.setLayout(new GridLayout(1,2));
+		p.setPreferredSize(new Dimension(200,50));
 		p.add(b1);
 		p.add(b2);
-		jf.add(p);
-		jf.add(ta);
+		jf.add(p,BorderLayout.NORTH);
+		jf.add(ta,BorderLayout.CENTER);
 		b1.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
