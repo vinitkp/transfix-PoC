@@ -3,6 +3,7 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.*;
+import java.io.*;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -86,7 +87,17 @@ public class InternationalizationSupportProg {
 		jf.setVisible(true);
 	}
 	public static void main(String []args){
+		Properties prop = new Properties();
+		 try {
+			     prop.load(new FileInputStream("/for_use_poc-martus_random-strings_en_US.properties"));
+                 String name = prop.getProperty("stairs");
+                // String address = prop.getProperty("address");
+                 System.out.println("Name: " + name);
+                // System.out.println("Address: " + address);
+			 } catch (Exception e) {
+		          }
 		InternationalizationSupportProg p = new InternationalizationSupportProg();
+
 	}
 
 
