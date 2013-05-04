@@ -44,16 +44,27 @@ public class InternationalizationSupportProg {
 				System.out.println(currentLocale);
 				messages = ResourceBundle.getBundle("for_use_poc-martus_random-strings",currentLocale);
 				ta.append(messages.getString("stairs"));
+				ta.append("\n");
 				ta.append(messages.getString("photo"));
+				ta.append("\n");
 				ta.append(messages.getString("bucket"));
+				ta.append("\n");
 				ta.append(messages.getString("Building"));
+				ta.append("\n");
 				ta.append(messages.getString("door"));
+				ta.append("\n");
 				ta.append(messages.getString("food"));
+				ta.append("\n");
 				ta.append(messages.getString("window"));
+				ta.append("\n");
 				ta.append(messages.getString("home"));
+				ta.append("\n");
 				ta.append(messages.getString("bed"));
+				ta.append("\n");
 				ta.append(messages.getString("chair"));
+				ta.append("\n");
 				ta.append(messages.getString("tree"));				
+				ta.append("\n");
 			}
 		});
 		b2.addActionListener(new ActionListener(){
@@ -64,6 +75,7 @@ public class InternationalizationSupportProg {
 				language = new String("hi");
 				country = new String("IN");
 				Locale currentLocale;
+				ta.setText("");
 				ta.append("ui strings in Hindi are\n\n");
 				ResourceBundle messages;
 				
@@ -71,16 +83,27 @@ public class InternationalizationSupportProg {
 				System.out.println(currentLocale);
 				messages = ResourceBundle.getBundle("for_use_poc-martus_random-strings",currentLocale);
 				ta.append(messages.getString("stairs"));
+				ta.append("\n");
 				ta.append(messages.getString("photo"));
+				ta.append("\n");
 				ta.append(messages.getString("bucket"));
+				ta.append("\n");
 				ta.append(messages.getString("Building"));
+				ta.append("\n");
 				ta.append(messages.getString("door"));
+				ta.append("\n");
 				ta.append(messages.getString("food"));
+				ta.append("\n");
 				ta.append(messages.getString("window"));
+				ta.append("\n");
 				ta.append(messages.getString("home"));
+				ta.append("\n");
 				ta.append(messages.getString("bed"));
+				ta.append("\n");
 				ta.append(messages.getString("chair"));
+				ta.append("\n");
 				ta.append(messages.getString("tree"));				
+				ta.append("\n");
 			}
 		});
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
